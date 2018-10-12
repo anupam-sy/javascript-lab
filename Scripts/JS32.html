@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>
+		</title>
+		<script>
+		function f1()
+		{
+			a=document.frm1.elements.t1.value;
+			b=document.frm1.elements.t2.value;
+			er=0;
+			if(a!=b)
+			{
+				alert("Password not matched");
+				er=1;
+			}
+			if(er==0)
+			{
+				document.frm1.submit();
+			}
+		}
+		</script>
+	</head>
+	<body>
+	<form  name=frm1 >
+	Enter Password <input type=text name=t1><br>
+	Confirm Password <input type=text name=t2><br>
+	<input type=button value='Click here' onClick='f1()'>
+	</form>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>
+		</title>
+		<script>
+		function f1()
+		{
+			a=document.frm1.elements.t1.value;
+			b=a.length;
+			if(b==0)
+			{
+				alert("Name can not be blank");
+			}
+		}
+		</script>
+	</head>
+	<body>
+	<form  name=frm1 >
+	Enter Name <input type=text name=t1><br>
+	<input type=submit onClick='f1()'>
+	</form>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>
+		</title>
+		<script>
+		function f1()
+		{
+			a=document.frm1.elements.t1.value;
+			b=a.length;
+			er=0;
+			if(b!=10)
+			{
+				alert("Mobile can only be of 10 digit");
+				er=1;
+			}
+			if(er==0)
+			{
+				document.frm1.submit();
+			}
+		}
+		</script>
+	</head>
+	<body>
+	<form  name=frm1 >
+	Enter Mobile <input type=text name=t1><br>
+
+	<input type=button value='Click here' onClick='f1()'>
+	</form>
+	</body>
+</html>
